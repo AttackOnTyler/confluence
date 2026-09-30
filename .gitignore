@@ -7,3 +7,4 @@ backend/obj/
 backend/bin/
 client/obj/
 client/bin/
+tools/blender/addons/__pycache__/
