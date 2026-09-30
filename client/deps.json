@@ -1,0 +1,32 @@
+[
+  {
+    "pname": "Godot.NET.Sdk",
+    "version": "4.7.2",
+    "hash": "sha256-Z5/pxnNsoZQ7BnMqxRE/UMJI6gKAWT/32wiBS3IFess="
+  },
+  {
+    "pname": "Godot.SourceGenerators",
+    "version": "4.7.2",
+    "hash": "sha256-1vUbZvoXVQvPy8OKrjQOcfHHKYskI23wk15O3NZ0VL4="
+  },
+  {
+    "pname": "GodotSharp",
+    "version": "4.7.2",
+    "hash": "sha256-+iwW5s5rjTyJAbvK/xWVZdxzJn74QGh9IBUh4I9l4Ok="
+  },
+  {
+    "pname": "GodotSharpEditor",
+    "version": "4.7.2",
+    "hash": "sha256-X29rwmPebDQ8wXQ2ToKO89E7qEXdFOBJ+oNne2oHWss="
+  },
+  {
+    "pname": "SpacetimeDB.BSATN.Runtime",
+    "version": "2.10.1",
+    "hash": "sha256-nsALEAzwWiYE4FiauKfu58dcf/jPBN/cCwpEu2JaMuU="
+  },
+  {
+    "pname": "SpacetimeDB.ClientSDK.Godot",
+    "version": "2.10.1",
+    "hash": "sha256-LKXzDfyIVxBmubHhUq5RmFgRqTfvG1WAI4KH0cfxW34="
+  }
+]

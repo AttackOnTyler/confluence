@@ -7,7 +7,10 @@
   outputs = { nixpkgs, ... }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfreePredicate = pkg: builtins.elem (nixpkgs.lib.getName pkg) [ "spacetimedb" ];
+      };
       godot = pkgs.godotPackages_4_7;
     in
     {
@@ -22,6 +25,10 @@
           pkgs.nodejs
           pkgs.xvfb-run
           pkgs.just
+          pkgs.spacetimedb
+          pkgs.binaryen
+          pkgs.patchelf
+          pkgs.unzip
         ];
         GODOT_PATH = "${godot.godot-mono}/bin/godot-mono";
         BLENDER_PATH = "${pkgs.blender}/bin/blender";

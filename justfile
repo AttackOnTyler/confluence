@@ -22,3 +22,7 @@ blender-stop:
 # Build the client's C# assembly inside the dev shell (a session's own shell is not in it).
 build:
     direnv exec {{justfile_directory()}} dotnet build {{justfile_directory()}}/client
+
+# Build the Backend to wasm, offline, into the gitignored toolchain cache.
+backend:
+    direnv exec {{justfile_directory()}} {{justfile_directory()}}/tools/backend/build.sh

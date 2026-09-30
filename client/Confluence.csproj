@@ -2,5 +2,11 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Pinned to the spacetime server version from nixpkgs (glacialis #141). -->
+    <PackageReference Include="SpacetimeDB.ClientSDK.Godot" Version="2.10.1" />
+  </ItemGroup>
 </Project>

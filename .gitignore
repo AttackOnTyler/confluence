@@ -2,3 +2,8 @@
 client/.godot/
 client/.mcp/
 *.glb
+.cache/
+backend/obj/
+backend/bin/
+client/obj/
+client/bin/
