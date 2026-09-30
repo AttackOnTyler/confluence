@@ -1,4 +1,6 @@
 # PROTOTYPE (glacialis #185)
+set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
+
 
 # Start Blender with the vendored MCP addon: under a virtual display as a user unit on Linux, live on Windows.
 [linux]
