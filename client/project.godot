@@ -1,0 +1,11 @@
+config_version=5
+
+[application]
+
+config/name="confluence scratch"
+config/features=PackedStringArray("4.7", "C#")
+run/main_scene="res://proto.tscn"
+
+[dotnet]
+
+project/assembly_name="Confluence"

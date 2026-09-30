@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "blender": { "command": "node", "args": ["tools/studio/mcp.mjs", "blender"] },
+    "godot": { "command": "node", "args": ["tools/studio/mcp.mjs", "godot"] }
+  }
+}

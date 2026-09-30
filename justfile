@@ -1,0 +1,22 @@
+# PROTOTYPE (glacialis #185)
+
+# Start Blender with the vendored MCP addon: under a virtual display as a user unit on Linux, live on Windows.
+[linux]
+blender:
+    systemctl --user is-active --quiet confluence-blender || systemd-run --user --unit=confluence-blender --collect \
+      --setenv=BLENDER_USER_SCRIPTS={{justfile_directory()}}/tools/blender \
+      --setenv=BLENDERMCP_NO_UPDATE_CHECK=1 \
+      direnv exec {{justfile_directory()}} xvfb-run -a blender --addons blender_mcp
+
+[windows]
+blender:
+    $env:BLENDER_USER_SCRIPTS = "{{justfile_directory()}}/tools/blender"; Start-Process $env:BLENDER_PATH -ArgumentList '--addons','blender_mcp'
+
+# Stop the Linux Blender.
+[linux]
+blender-stop:
+    systemctl --user stop confluence-blender
+
+# Build the client's C# assembly inside the dev shell (a session's own shell is not in it).
+build:
+    direnv exec {{justfile_directory()}} dotnet build {{justfile_directory()}}/client

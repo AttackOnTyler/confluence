@@ -1,0 +1,17 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Spin.cs" id="1_fl4k8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3swg3"]
+
+[node name="Proto" type="Node3D" unique_id=367220840]
+
+[node name="Box" type="MeshInstance3D" parent="." unique_id=2040526318]
+mesh = SubResource("BoxMesh_3swg3")
+script = ExtResource("1_fl4k8")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1440350356]
+transform = Transform3D(0.8660254, 0.35355338, -0.35355338, 0, 0.70710677, 0.70710677, 0.5, -0.6123724, 0.6123724, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=335560673]
+transform = Transform3D(1, 0, 0, 0, 0.8944276, 0.4472128, 0, -0.4472128, 0.8944276, 0, 2, 4)

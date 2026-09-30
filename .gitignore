@@ -1,0 +1,4 @@
+.direnv/
+client/.godot/
+client/.mcp/
+*.glb
